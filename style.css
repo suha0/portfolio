@@ -5,7 +5,16 @@ body {
   min-height: 100vh;
   color: #eee;
 }
-
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;         /* keeps video behind content */
+  object-fit: cover;   /* fills the screen without distortion */
+  filter: brightness(0.7); /* optional: darkens video for better text visibility */
+}
 #bg-overlay {
   position: fixed;
   top: 0; left: 0;
