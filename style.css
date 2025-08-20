@@ -407,7 +407,7 @@ body {
 .contact-section {
   text-align: center;
   padding: 80px 20px;
-  background: transparent;   /* no solid background */
+  background: inherit;   /* no solid background */
   position: relative;
   z-index: 2;               /* keeps it above the video */
   color: #fff;              /* white text for dark video */
