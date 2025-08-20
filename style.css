@@ -220,24 +220,38 @@ body {
   padding: 25px;
 }
 .skill { margin-bottom: 15px; }
-.skill span {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #fff;
+.skill-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: flex-start;
+  padding: 15px 0;
 }
-.progress {
-  background: rgba(255,255,255,0.1);
-  border-radius: 20px;
-  height: 12px;
-}
-.progress-bar {
-  background: linear-gradient(90deg, #ffde59, #ffb347);
-  color: #111;
-  font-weight: 700;
-  font-size: 0.75rem;
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
   text-align: center;
-  transition: width 2s ease-in-out;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.skill span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
 }
 
 /* Experience Section */
@@ -382,12 +396,6 @@ body {
   gap: 30px;
   align-items: flex-start;
 }
-.contact-form-box {
-  flex: 2;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  border-radius: 15px;
-}
 .contact-info-box {
   flex: 1;
   background: rgba(0, 0, 0, 0.4);
@@ -395,29 +403,39 @@ body {
   border-radius: 15px;
   height: fit-content;
 }
-.form-control {
-  background-color: #2a2f3a;
-  color: #fff;
-  border: 1px solid #444;
-  padding: 12px;
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9; /* light background */
 }
-.form-control:focus {
-  background-color: #2a2f3a;
-  color: #fff;
-  border-color: #ffde59;
-  box-shadow: 0 0 10px rgba(255, 222, 89, 0.2);
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
 }
-.btn-contact {
-  background: #ffde59;
-  color: #111;
-  border: none;
-  font-weight: 600;
+
+.contact-section p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-btn {
+  display: inline-block;
   padding: 12px 25px;
+  background: #4CAF50; /* green button */
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
   border-radius: 30px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
-.btn-contact:hover {
-  background: #e9c53b;
+
+.contact-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
 }
 
 /* Footer */
