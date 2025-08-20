@@ -407,36 +407,41 @@ body {
 .contact-section {
   text-align: center;
   padding: 80px 20px;
-  background: #f9f9f9; /* light background */
+  background: transparent;   /* no solid background */
+  position: relative;
+  z-index: 2;               /* keeps it above the video */
+  color: #fff;              /* white text for dark video */
 }
 
 .contact-section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #fff;              /* white heading */
 }
 
 .contact-section p {
   margin-bottom: 20px;
   font-size: 1.1rem;
-  color: #555;
+  color: #ddd;              /* lighter gray for contrast */
 }
-
 .contact-btn {
   display: inline-block;
   padding: 12px 25px;
-  background: #4CAF50; /* green button */
-  color: white;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent button */
+  color: #fff;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 30px;
   transition: 0.3s ease;
+  backdrop-filter: blur(4px); /* glassy effect */
 }
 
 .contact-btn:hover {
-  background: #45a049;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
   transform: scale(1.05);
 }
+
 
 /* Footer */
 footer {
