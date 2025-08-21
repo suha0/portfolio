@@ -25,12 +25,18 @@ body {
 /* Navbar */
 .navbar {
   position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000; /* High z-index to stay on top */
   background: rgba(15, 20, 30, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+nav.scrolled {
+    background: rgba(0, 0, 0, 0.85); /* dark solid */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 .navbar-brand {
   color: #ffde59 !important; /* Yellow color */
   font-weight: 700;
